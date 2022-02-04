@@ -1,9 +1,20 @@
 .spinner{
   font-size: 140px;
+  animation: rotate 3s linear infinite;
+  display: inline-block 
 }
+
 .spinner:after {
   content: '◌';
+  animation: rotate 1s linear infinite;
 }
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 
 #chart {
     border: 1px solid black;
